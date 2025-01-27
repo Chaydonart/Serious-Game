@@ -1,30 +1,28 @@
 public class Produit {
     private float prix;
     private Pays pays;
+    private int quantite;
+
+    // Constructeur
+    public Produit(float prix, Pays pays, int quantite) {
+        this.prix = prix;
+        this.pays = pays;
+        this.quantite = quantite;
+    }
 
     public float getPrix() {
         return prix;
     }
 
-    public float getTaxe(){
-        return taxe(this.pays);
+    public Pays getPays() {
+        return pays;
     }
 
-    private float taxe(Pays pays){
-        switch(pays){
-            case France :
-                return 0.20f;
-            case Espagne :
-                return 0.182f;
-            case Allemagne:
-                return 0.156f;
-            case RoyaumeUnis:
-                return 0.228f;
-            case Belgique:
-                return 0.17f;
-            default:
-                return 1;
-        }
+    public int getQuantite() {
+        return quantite;
     }
 
+    public float getPrixTotal() {
+        return prix * quantite;
+    }
 }
