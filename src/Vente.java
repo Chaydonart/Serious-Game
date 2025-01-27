@@ -3,21 +3,23 @@ import java.util.*;
 public class Vente {
     List<Produit> produits;
 
-
     public float calculTotal(){
 
         return 0;
     }
 
-    public float calculUnite(){   
+    private float calculUnite(){
         return 0;
     }
 
-    public float calculRemise(){
+    private float calculRemise(){
         return 0;
     }
 
-    public float calculPays(){
+    private float calculPays(){
         return 0;
     }
+
+
+
 }
